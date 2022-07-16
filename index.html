@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/94615d7b67.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="imagePre active">
+            <div class="imageDiv_1">
+                <img src="" alt="" id="preImage">
+                <i class="fas fa-times-circle close"></i>
+                <div class="image-name">
+                    file.name
+                </div>
+            </div>
+            <div class="imageDiv_2" >
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+                <p>No file chosen, yet!</p>
+            </div>
+        </div>
+
+        <div class="chooseBtn">
+            <input type="file" name="" id="uploadImg" hidden>
+            <button onclick="chooseBtn()" id="choosebtn">choose a file</button>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>

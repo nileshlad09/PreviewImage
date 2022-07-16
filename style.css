@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Permanent+Marker&family=Poppins:wght@500&family=Roboto:wght@100&family=Shadows+Into+Light&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container .imagePre{
+    gap: 20px;
+    border-radius: 10px;
+    width: 450px;
+    height: 250px;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.097);
+}
+.imagePre.active{
+    border: 2px dashed rgba(0, 0, 0, 0.097);
+}
+/* ========= imageDiv_1 area start ========= */
+.imageDiv_1{
+    width: 450px;
+    height: 250px;
+    padding: 10px;
+    display: none;
+}
+.imageDiv_1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius:10px;
+}
+.imageDiv_1 .close{
+   position: absolute; 
+   top: 15px;
+    right: 20px;
+    color: purple;
+    font-size: 10px;
+    opacity: 0;
+}
+.imageDiv_1 .image-name{
+    position: absolute; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 1.4rem;
+    color: white;
+    background-image: linear-gradient(to right, rgba(253, 9, 253, 0.822), rgba(10, 46, 228, 0.784));    
+    opacity: 0;
+} 
+    /* imageDiv_1 hover area strat */
+.imageDiv_1:hover .close{
+    opacity: 1;
+    transition: .5s ease-in-out;
+}
+.imageDiv_1:hover .image-name{
+    opacity: 1;
+    transition: .5s ease-in-out;
+} 
+.imageDiv_1 i:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    color: red;
+} 
+    /* imageDiv_1 hover area End */
+
+/* ========= imageDiv_1 area End ========= */
+
+/* ========= imageDiv_2 area start ========= */
+.imageDiv_2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+.imageDiv_2 i{
+    font-size: 80px;
+    color: rgb(149,87,246);
+}
+.imageDiv_2 p{
+    font-size: 17px;
+}
+/* ========= imageDiv_2 area End ========= */
+
+/*=======choose a file button area Start===== */
+.chooseBtn button{
+    background-image: linear-gradient(to right, rgb(0, 42, 255), rgba(128, 0, 128, 0.582));
+    width: 100%;
+    margin-top: 25px;
+    border: none;
+    height: 35px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    color: #ffff;
+    transition:0.3s;
+}
+.chooseBtn button:hover{
+    background-image: linear-gradient(to right, rgba(128, 0, 128, 0.582), rgb(0, 42, 255));
+    cursor: pointer;
+}
+/*=======choose a file button area End===== */
